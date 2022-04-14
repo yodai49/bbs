@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{str_replace('_','-',app()->getLocale())}}">
     <head>
-        <title>これはテスト</title>
+        <title>テスト掲示板</title>
     </head>
     <body>
-    <h1>こんにちは</h1>
+    <input>
+    <input type="button" value="投稿">
     </body>
 </html>
