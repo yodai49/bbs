@@ -1,0 +1,59 @@
+body{
+    background-color: black;
+    color:white;
+    font-family:sans-serif;
+}
+.balloon1 {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 300px;
+    color: #000;
+    font-size: 0.9rem;
+    background: #e0edff;
+    border-radius: 15px;
+  }
+  
+  .balloon1:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid #e0edff;
+  }
+  
+  .balloon1 p {
+    margin: 0;
+    padding: 0;
+  }
+  .whoAmI{
+      color:#555;
+      font-size:0.7rem;
+  }
+  .error{
+      background-color:#ecc;
+      color:rgba(0,0,0,1);
+      padding-left:10px;
+      padding-right:10px;
+      width:500px;
+      border-radius: 5px;
+  }
+.fav{
+    background-color:rgba(240,200,200,1);
+}
+.displayNone{
+    display:none;
+}
+h1{
+    background-color:rgba(30,30,80,1);
+    color:white;
+    padding:10px;
+    margin:0;
+}
+h2{
+    background-color:rgba(30,30,80,1);
+}

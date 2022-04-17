@@ -22,13 +22,12 @@ Route::get('/{id}/address', function($id){
     return "ユーザー番号".$id."番の住所:".$user->address->address."。名前は".$address->user->name."です。";
 });
 
-Route::get('/', 'App\Http\Controllers\TestsController@test');
+Route::get('/', 'App\Http\Controllers\PagesController@index');
+Route::post('/', 'App\Http\Controllers\PagesController@save');
 
-Route::get('/hello', function () {
-    return "hello!!!";
-});
-
-Route::get('/test', 'App\Http\Controllers\TestsController@test');
+Route::get('/bbs', 'App\Http\Controllers\BbsController@index');
+Route::post('/bbs', 'App\Http\Controllers\BbsController@create');
+Route::post('/bbsFav', 'App\Http\Controllers\BbsController@fav');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

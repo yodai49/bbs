@@ -44,4 +44,7 @@ class User extends Authenticatable
     public function address(){
         return $this->hasOne(Address::class);
     }
+    public function createMessage(Request $request){
+        $user = $request->post();
+    }
 }
